@@ -1,9 +1,10 @@
-require("tcd.set")
-require("tcd.remap")
-require('tcd.packer')
+require("mww.set")
+require("mww.remap")
+require('mww.packer')
+require('mww.snip-loader')
 
 local augroup = vim.api.nvim_create_augroup
-local TcdGroup = augroup('tcd', {})
+local mwwGroup = augroup('mww', {})
 
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup('HighlightYank', {})
@@ -24,7 +25,7 @@ autocmd('TextYankPost', {
 })
 
 autocmd({"BufWritePre"}, {
-    group = TcdGroup,
+    group = mwwGroup,
     pattern = "*",
     command = "%s/\\s\\+$//e",
 })
