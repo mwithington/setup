@@ -22,7 +22,7 @@
 	"Insert Mocha Describe & Test Template": {
 		"prefix": "ditest",
 		"body": [
-			"describe('$4', () => {",
+			"describe('$0', () => {",
 			"\tit('scenario: $1 | outcome: $2', async function () {",
 			"\t\t$LINE_COMMENT -- Setup",
 			"\t\t$0",
