@@ -10,7 +10,7 @@ vim.keymap.set("n", "<leader>be<cr>", ":edit ~/.bashrc<cr>")
 
 -- File Nav
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>")
-vim.keymap.set("n", "<leader>f", ":Ex<cr>")
+vim.keymap.set("n", "<leader>f", ":NvimTreeFindFile<cr>")
 vim.keymap.set("n", "<leader>df", ":NvimTreeToggle<cr>")
 
 
@@ -29,3 +29,5 @@ vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left>
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
+vim.keymap.set("n", "<leader>jq", ":%!jq .")
