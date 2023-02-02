@@ -26,6 +26,10 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
 
+  use({ "akinsho/git-conflict.nvim", tag = "*" })
+
+	use("f-person/git-blame.nvim")
+
   use('jiangmiao/auto-pairs')
 
   use {
