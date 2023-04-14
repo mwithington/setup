@@ -2,8 +2,8 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "U", "<C-r>")
 
 -- Editor Nav
-vim.keymap.set("n", "<C-n>", "<C-d>zz")
-vim.keymap.set("n", "<C-p>", "<C-u>zz")
+-- vim.keymap.set("n", "<C-n>", "<C-d>zz")
+-- vim.keymap.set("n", "<C-p>", "<C-u>zz")
 
 -- Config Edits
 vim.keymap.set("n", "<leader>be<cr>", ":edit ~/.bashrc<cr>")
@@ -21,7 +21,6 @@ vim.keymap.set("n", "<leader>pb", ":bprevious<cr>")
 vim.keymap.set("n", "<leader>nw", "<C-W>l")
 vim.keymap.set("n", "<leader>pw", "<C-W>h")
 vim.keymap.set("n", "<leader>ww", ":only<cr>")
-
 
 vim.keymap.set("n", "Q", "<nop>")
 
