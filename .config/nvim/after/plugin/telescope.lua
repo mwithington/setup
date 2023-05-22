@@ -24,3 +24,6 @@ require('telescope').load_extension "file_browser"
 local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<leader>gg', builtin.live_grep)
+
+require('telescope').load_extension('test_plug')
+vim.api.nvim_set_keymap("n", "<leader>ph", "<Cmd>lua require('telescope').extensions.test_plug.coauthors()<CR>", { silent = true })
