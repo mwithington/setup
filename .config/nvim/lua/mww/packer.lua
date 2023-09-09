@@ -42,7 +42,7 @@ return require('packer').startup(function(use)
         default_keybindings = false,
         default_bindings = false,
         suggestion = {
-          auto_trigger = true,
+          auto_trigger = false,
           keymap = {
             next = "<C-j>",
             prev = "<C-k>",
